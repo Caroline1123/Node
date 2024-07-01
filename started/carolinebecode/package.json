@@ -1,0 +1,43 @@
+{
+	"name": "carolinebecode",
+	"version": "1.1.7",
+	"description": "My personal card",
+	"main": "bin/card.mjs",
+	"bin": {
+		"carolinebecode": "/bin/card.mjs"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Caroline1123/node-card.git"
+	},
+	"scripts": {
+		"prepublish": "npm run build",
+		"build": "node build.mjs",
+		"dev": "npm run build && node ./bin/card.mjs",
+		"format": "npx @biomejs/biome format --write",
+		"lint": "npx @biomejs/biome lint --write",
+		"check": "npx @biomejs/biome check --write"
+	},
+	"keywords": [
+		"card",
+		"npm",
+		"npm card",
+		"npx",
+		"npx card",
+		"business card"
+	],
+	"author": "Tierney Cyren <hello@bnb.im> (http://bnb.im)",
+	"license": "MIT",
+	"files": [
+		"bin/card.mjs",
+		"bin/output"
+	],
+	"dependencies": {
+		"@biomejs/biome": "1.8.2",
+		"boxen": "^7.1.1",
+		"chalk": "^5.3.0"
+	},
+	"bugs": {
+		"url": "https://github.com/bnb/bitandbang/issues"
+	}
+}
