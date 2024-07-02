@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "vitest": "^1.6.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  }
+}
